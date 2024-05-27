@@ -1,6 +1,7 @@
 package net.gsraider.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.gsraider.tutorialmod.block.ModBlocks;
 import net.gsraider.tutorialmod.item.ModCreativeModeTabs;
 import net.gsraider.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class TutorialMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
